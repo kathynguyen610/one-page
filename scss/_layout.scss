@@ -1,0 +1,8 @@
+.wrapper {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	"header header"
+	"s1 s1"
+	"s2 s2";
+}
