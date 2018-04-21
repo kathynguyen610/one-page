@@ -1,40 +1,60 @@
 body {
-	background:#000 url('../img/kermit.png') no-repeat;
+	background:#000 url('../img/kermit.png') no-repeat fixed;
+	background-size:cover;
 }
 
 h1, h2 {
 		@include text;
 	}
+
+h2 {
+		font-family:'Lora';
+		width:90%;
+		text-align:left;
+	}
+
+.headertext {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		padding:1em;
+	}
+
+h1 b, .headertext a {
+	color:#A1D490;
+	text-decoration: none;
+}
 header {
-	image-size:cover;
-	height:100vh;
+	height:90vh;
 	grid-area: header;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
-	h2 {
-		font-family:'Lora';
+
+	.headertext {
+		padding:2.5em;
 	}
 }
 
-.s1, .s2 {
+
+
+.s1, .s2, .s3 {
 	grid-area:s1;
 	display:flex;
 	justify-content:space-evenly;
-	margin:2em;
+	margin:3em 2em 3em 2em;
 	
 	img {
 		width:50%;
+		padding:1em;
 	}
-	.text {
-		margin:0 auto;
-		display: flex;
-		justify-content:center;
-		flex-direction:column;
-	}
-
 }
 
-s2 {
+.s2 {
 	grid-area:s2;
+	flex-direction:row-reverse;
+}
+
+.s3 {
+	grid-area:s3;
 }
