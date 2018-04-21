@@ -519,12 +519,12 @@ textarea {
 }
 
 body {
-  background: #000 url("../img/bg.jpg") no-repeat;
+  background: #000 url("../img/kermit.png") no-repeat;
 }
 
 h1, h2 {
   font-family: 'Roboto';
-  color: #fff;
+  color: #000;
   margin: 0 auto;
   text-align: center;
   font-weight: 300;
